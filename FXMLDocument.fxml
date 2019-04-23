@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1100.0" prefWidth="1918.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jdfv.FXMLDocumentController">
+   <children>
+      <ToolBar prefHeight="45.0" prefWidth="1849.0">
+        <items>
+          <Button fx:id="NT" mnemonicParsing="false" onMousePressed="#Ac" prefHeight="34.0" prefWidth="217.0" text="New tab" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookmark" mnemonicParsing="false" onMousePressed="#GoBookMarks" prefHeight="34.0" prefWidth="183.0" text="Book Mark" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="history" mnemonicParsing="false" onMousePressed="#hs" prefHeight="35.0" prefWidth="163.0" text="History">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+      <ImageView fx:id="candy" fitHeight="454.0" fitWidth="598.0" layoutX="693.0" layoutY="322.0" onMouseMoved="#showMsg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/received_1071963183002318.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="search" layoutX="381.0" layoutY="780.0" onAction="#Search" prefHeight="45.0" prefWidth="1152.0" promptText="type a URL" />
+      <ImageView fx:id="glassSearch" fitHeight="42.0" fitWidth="46.0" layoutX="1487.0" layoutY="782.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/101791-200.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="google" fitHeight="103.0" fitWidth="144.0" layoutX="380.0" layoutY="158.0" onMouseMoved="#GMsg" onMousePressed="#GoogleScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/google.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="youtube" fitHeight="85.0" fitWidth="136.0" layoutX="580.0" layoutY="164.0" onMouseMoved="#YMsg" onMousePressed="#YoutubeScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/5295_-_Youtube_I-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twitter" fitHeight="66.0" fitWidth="103.0" layoutX="767.0" layoutY="173.0" onMouseMoved="#TMsg" onMousePressed="#TwitterScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/twitter-icon-logo-100644740-large.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="facebook" fitHeight="103.0" fitWidth="103.0" layoutX="959.0" layoutY="158.0" onMouseMoved="#FMsg" onMousePressed="#FaceBookScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/facebook-icon-preview-1-400x400.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Github" fitHeight="103.0" fitWidth="114.0" layoutX="1153.0" layoutY="158.0" onMouseMoved="#GTMsg" onMousePressed="#GithubScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/GitHub-Mark.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Kora" fitHeight="96.0" fitWidth="103.0" layoutX="1345.0" layoutY="162.0" onMouseMoved="#KMsg" onMousePressed="#KoraScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/soccer_ball.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="70.0" layoutX="1857.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/courses-icon-10.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="msg" layoutX="1001.0" layoutY="378.0" prefHeight="18.0" prefWidth="99.0" />
+      <Label fx:id="msgGoogle" layoutX="455.0" layoutY="156.0" prefHeight="18.0" prefWidth="52.0" />
+      <Label fx:id="msgYoutube" layoutX="651.0" layoutY="157.0" prefHeight="18.0" prefWidth="59.0" />
+      <Label fx:id="msgTwitter" layoutX="838.0" layoutY="158.0" prefHeight="18.0" prefWidth="52.0" />
+      <Label fx:id="msgFacebook" layoutX="1037.0" layoutY="159.0" prefHeight="18.0" prefWidth="70.0" />
+      <Label fx:id="msgGithub" layoutX="1228.0" layoutY="157.0" prefHeight="18.0" prefWidth="52.0" />
+      <Label fx:id="msgKoraa" layoutX="1427.0" layoutY="160.0" prefHeight="18.0" prefWidth="52.0" />
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
